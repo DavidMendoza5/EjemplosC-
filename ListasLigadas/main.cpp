@@ -27,8 +27,12 @@ int main() {
 
     cout<<"Ingrese un número: \n";
     cin>>dato;
-    
     insertarLista(lista,dato);
+
+    cout<<"Ingrese un número: \n";
+    cin>>dato;
+    insertarLista(lista,dato);
+
     mostrarLista(lista);
 
     return 0;
@@ -41,7 +45,12 @@ void insertarLista(Nodo *&lista, int n) {
     Nodo *aux1 = lista;
     Nodo *aux2;
 
-    while ((aux1 != NULL) && (aux1->dato != n)) {
+    if ((aux1 != NULL) && (aux1->dato == n)) {
+    cout<<"Elemento repetido\n";
+    aux1 = nuevo_nodo;
+    }
+//&& (aux1->dato < n)
+    while ((aux1 != NULL)) {
         aux2 = aux1;
         aux1 = aux1->siguiente;
     }
@@ -49,7 +58,7 @@ void insertarLista(Nodo *&lista, int n) {
     if(lista == aux1) {
         lista = nuevo_nodo;
     } else {
-        aux2->siguiente = nuevo_nodo;
+        aux2->siguiente = nuevo_nodo;   
     }
     nuevo_nodo->siguiente = aux1;
     cout<<"Elemento "<< n << " insertado correctamente\n";
