@@ -10,6 +10,7 @@ int main() {
     cout<<"Ingrese el número de elementos de la serie de fibonacci:";
     cin>> repeticiones;
     serieFibonacci(repeticiones);
+    cout<<"\n";
 
     return 0;
 }
