@@ -1,3 +1,10 @@
+## Algoritmos en C++
+Repositorio creado con el fin de compartir ejemplos en el lenguaje C++ que sirvan de ayuda a otros programadores. 
+El repositorio contiene ejemplos de ejercicios y algoritmos hechos en C++.
+
+Para poder compilar los programas, primero debe posicionarse en la carpeta en donde se encuentra el programa que desea compilar. Luego debe seguir los pasos
+mostrados a continuación:
+### Linux (Ubuntu)
 **Compilar el programa**
 ``` bash
 g++ nombre_programa.cpp
@@ -10,3 +17,6 @@ g++ nombre_programa.cpp -o nombreArchivoCompilado
 ``` bash
 ./a.out
 ```
+
+### Referencias
+Joyanes, L., Sánchez, L., & Zahonero, I. (2007). Estructuras De Datos En C++ (1.a ed.). MCGRAW HILL EDDUCATION.
