@@ -43,8 +43,8 @@ Nodo::Nodo(tipoElemento valor, Nodo *ramaIzdo, Nodo *ramaDcho) {
 
 class arbol {
     private:
-        protected:
-            Nodo *raiz;
+    protected:
+        Nodo *raiz;
     public:
         arbol() {
             raiz = NULL;
